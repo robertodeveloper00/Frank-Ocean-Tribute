@@ -1,0 +1,59 @@
+// COLOR VARIABLES
+$color-primary: #E2721C;
+
+$color-secondary: #E18641;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-1-tx: #f9f7f6fa;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #302f2e;
+$color-grey-dark-2: #131212;
+
+// FONT VARIABLES
+$font-primary: 'Montserrat', sans-serif;
+$font-display: 'Averia Serif Libre', sans-serif;
+
+//  MEDIA QUERIES
+$bp-large: 75em;  //  1200px / 16 = 75em
+$bp-medium: 59.375em;  //  950px
+$bp-small: 36.35em; //580px 
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; //inherit from html = border-box
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //This is so 1rem = 10px since the browser default font-size is 16px. 10 / 16 = 62.5%
+    scroll-behavior: smooth;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 45%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 35%;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-grey-light-1;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-grey-light-1;
+}

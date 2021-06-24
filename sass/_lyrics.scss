@@ -1,0 +1,55 @@
+.lyrics {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__one {
+        background: url(/img/Blakcm3.jpg) no-repeat center center/cover;
+    }
+
+    &__two {
+        background: url(/img/whiteferrariReady.jpg) no-repeat center center/cover;
+    }
+}
+
+.lyrics__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+    
+    p {
+        background-color: rgba(0, 0, 0, 0.774);
+        margin: 0 2.5rem;
+        padding: 1rem 2rem;
+        border-radius: 10%;
+        font-size: 4rem;
+        transition: .1s ease-in;
+
+        @media only screen and (max-width: $bp-medium) {
+            margin: 0 1rem;
+            padding: .2rem 1rem;
+            font-size: 3.5rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            margin: 0;
+            padding: .5rem;
+            font-size: 3rem;
+            border-radius: 0%;
+        }
+
+        &:hover {
+            background-color: $color-grey-light-1-tx;
+            color: $color-primary;
+            transform: scale(1.1) rotate(-10deg);
+        }
+    }
+
+}
+
+
+
